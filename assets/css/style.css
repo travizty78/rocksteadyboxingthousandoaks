@@ -571,6 +571,20 @@ blockquote.prose-quote {
   line-height: 1.6;
 }
 
+/* Coach portrait in the "Meet Coach Dean" section. Landscape photo, capped
+   so it reads as a portrait beside the bio rather than a hero band. */
+.coach-photo {
+  margin: 0 auto;
+  max-width: 460px;
+  width: 100%;
+}
+.coach-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
 /* ------------------------------ Forms ------------------------------ */
 
 .contact-form { text-align: left; }
