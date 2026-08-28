@@ -617,14 +617,6 @@ blockquote.prose-quote {
 }
 .form-field textarea { resize: vertical; }
 
-.form-disclaimer {
-  margin: 16px 0 0;
-  font-size: 12px;
-  color: var(--color-text-muted-2);
-  text-align: center;
-}
-.form-disclaimer a { color: var(--color-green); }
-.form-disclaimer a:hover { color: var(--color-green-hover); }
 
 /* ------------------------------ Utility ------------------------------ */
 
