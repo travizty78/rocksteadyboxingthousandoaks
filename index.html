@@ -104,6 +104,41 @@
       <a class="btn btn--round" href="/rock-steady-boxing">Learn More</a>
     </div>
   </section>
+
+  <section class="section text-center">
+    <div class="container">
+      <h2>Call Us: <a href="tel:747-234-1115" style="color:var(--color-green)">747-234-1115</a></h2>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow"><span class="eyebrow__text">Schedule Free Class</span><hr></div>
+
+      <form name="schedule-free-class" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" style="max-width:480px;margin:0 auto">
+        <input type="hidden" name="form-name" value="schedule-free-class">
+        <p class="visually-hidden"><label>Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field"></label></p>
+
+        <div class="form-field">
+          <label for="hp-sfc-name">Name*</label>
+          <input type="text" id="hp-sfc-name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="hp-sfc-email">Email*</label>
+          <input type="email" id="hp-sfc-email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="hp-sfc-phone">Phone*</label>
+          <input type="tel" id="hp-sfc-phone" name="phone" required>
+        </div>
+
+        <div class="text-center" style="margin-top:8px">
+          <button type="submit" class="btn btn--square">Send</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
