@@ -1,10 +1,14 @@
 [build]
   publish = "."
 
+# Assets keep stable filenames (hero.jpg, style.css), so they must not be
+# cached as immutable — a replaced image would otherwise stay stale in a
+# returning visitor's browser for a year. Cache for an hour, then revalidate;
+# unchanged files come back as a cheap 304.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=3600, must-revalidate"
 
 [[redirects]]
   from = "/home"
